@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faudiax | About us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="images/FauChat.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+  <body>
+
+    <div class="body">
+      
+      <p class="PARA">
+        Welcome to Faudiax Official site where you can watch Official movie series, video's and also liten 
+        to amazing podcasts, sound effects and watch all what happens behind the scene.
+      </p>
+
+      <p class="PARA2">
+        Our business is a movie production studio, Faudiax company was found in the year 2019 which was the time 
+        we started making our productions and our first show 'Faudynews' was made in the Covid-19 pandemic which was 
+        the first branch of our business to gain public attention.
+      </p>
+
+      <h2 class="Top-Hits">Our plans</h2>
+      <div class="line-Tops"></div>
+
+      <p class="PARA2">
+        Our future plans are to work hard and get more followers from social media by releasing the small movies and 
+        series we make and soon with a good fan base we will release our Faudiax app.
+      </p>
+      <p class="PARA2">
+        However the work to achieve our plans has already started and soon more branches and shows will come from this company 
+        and this company will be one of the worlds leading film making studios. Our dreams are big but our dream can't be 
+        accomplished without you.
+      </p>
+
+
+      <h2 class="Top-Hits">About this web</h2>
+      <div class="line-Tops"></div>
+
+      <div class="PARA2">
+        This website shows a close and exact replica of the the Faudiax official App.
+      </div>
+
+      <div class="line-Tops"></div>
+
+      <a href="Home.html">
+        <button type="button" class="GuestButn">Business contacts</button>
+      </a>
+
+    </div>
+
+    <!----------Support us------------->
+    <!---Top Bar--->
+
+    <div class="top-bar">
+
+      <img src="./images/FauChat.png" alt="" class="LogoTop">
+      <h1 class="mainlogo">Faudiax</h1>
+
+      <ion-icon name="person-outline" size="large" class="Profile-open" onclick="openProfile()"></ion-icon>
+
+    </div>
+
+    <div class="botto">
+      <div class="bottombody">
+
+          <a href="Home.html" class="Bottombar-Search">
+              <ion-icon name="home-outline" size="large"></ion-icon>
+          </a>
+  
+          <a href="Search/Search.html" class="Bottombar-Search">
+            <ion-icon name="search-outline" size="large"></ion-icon>
+        </a>
+  
+          <a href="Faudynews/FaudyNews.html" class="Bottombar-Search">
+              <ion-icon name="newspaper-outline" size="large"></ion-icon>
+          </a>
+  
+          <a href="About US.html" class="Bottombar-Search_active">
+              <ion-icon name="apps-outline" size="large"></ion-icon>
+          </a>
+      </div>
+  </div>
+
+    <!------ The profile nav bar ------->
+
+      <div id="Profile-Nav" class="Search-Nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeProfile()">&times;</a>
+
+        <div class="body"></div>
+
+          <h3 class="Profile_Tittle">Profile</h3>
+
+          <div class="Profile-img"></div>
+
+          <div class="Username"> User Name : Guest 12t329fau.diax0021</div>
+          <div class="Password"> Password : Not Availible</div>
+
+          <div class="note">To make an account download the Faudiax App</div>
+        </div>
+
+        <script>
+          function openProfile() {
+            document.getElementById("Profile-Nav").style.width = "100%";
+          }
+      
+          function closeProfile() {
+            document.getElementById("Profile-Nav").style.width = "0";
+          }
+        </script>
+
+      </div>
+
+
+    <!------ The Search nav bar ------->
+
+      <div id="Search-Nav" class="Search-Nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+
+        <form autocomplete="off">
+          <div class="search-container">
+            <img src="images/FauChat.png" alt="logo" class="Slogo">
+            <div class="autocomplete" style="width:95%;">
+              <input type="search" id="mySearch" onchange="openPage()" placeholder="let your curiosity guide you.." title="Type your search here">
+            </div>
+            <a class="MySearch-butn" href="#">
+              <ion-icon name="search-outline" size="large"></ion-icon>
+            </a> 
+          </div>
+        </form>
+        <script>
+          function openSearch() {
+            document.getElementById("Search-Nav").style.width = "100%";
+          }
+      
+          function closeSearch() {
+            document.getElementById("Search-Nav").style.width = "0";
+          }
+        </script>
+      </div>
+
+    <!------ The Search nav bar -------> 
+
+    <!------ The nav bar ------->
+    <!------ The nav bar ------->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="Js/script.js"></script>
+    <script src="Js/Search.js"></script>
+
+  </body>
+
+</html>

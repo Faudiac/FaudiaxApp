@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faudiax | appBeta</title>
+    <link rel="shortcut icon" type="x-icon" href="images/FauChat.png">
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="images/FauChat.png" width="100%">
+    </div>
+
+    <h1>Faudiax</h1>
+
+    <form action="">
+        <div class="SignLog">
+
+            <div class="Welcome">Welcome to Faudiax</div>
+    
+            <div class="Create"> Create an account</div>
+
+                <input type="text" placeholder="User Name" name="Username" id="UserName" required>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+
+                <a href="Home.html">
+                    <button type="submit" class="registerbtn">Create Account</button>
+                </a>
+
+                <a href="Home.html">
+                    <button type="button" class="GuestButn">Join As Guest</button>
+                </a>
+
+                <p class="signin">Already have an account? <a href="LogIn.html">Log in</a>.</p>
+            </div>
+            
+        </div>
+    </form>
+    
+</body>
+
+<style>
+
+    body {
+        background: rgb(242, 75, 14);
+        text-align: center;
+    }
+
+    h1 {
+        color: white;
+        font-size: 40px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .logo {
+        width: 15em;
+        height: 15em;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2.5em auto;
+        border-radius: 50%;
+    }
+
+    .SignLog {
+        width: 90%;
+        height: auto;
+        background: white;
+        margin: 1em auto;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .Welcome {
+        padding: 20px;
+        padding-bottom: 0px;
+        font-size: 30px;
+        color: rgb(16, 16, 16);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .Create {
+        padding-bottom: 20px;
+        font-size: 25px;
+        color: rgb(42, 42, 42);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+    width: 80%;
+    padding: 15px;
+    margin: 0.5em auto;
+    display: inline-block;
+    border: 1px solid orangered;
+    border-radius: 10px;
+    background: #f1f1f1;
+    }
+
+    input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+    }
+
+    /* Overwrite default styles of hr */
+    hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+    }
+
+    /* Set a style for the submit button */
+    .registerbtn {
+    background-color: #ff4d00;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    border-radius: 50px;
+    opacity: 0.9;
+    }
+
+    .registerbtn:hover {
+    opacity: 1;
+    }
+
+    /* Add a blue text color to links */
+    a {
+    color: rgb(255, 79, 30);
+    }
+
+    /* Set a grey background color and center the text of the "sign in" section */
+    p {
+        padding-bottom: 10px;
+    }
+
+    .GuestButn {
+        border: 1px solid rgb(255, 98, 0);
+        background-color: #ffffff;
+        color: rgb(255, 98, 0);
+        padding: 16px 20px;
+        margin: 8px 0;
+        cursor: pointer;
+        width: 90%;
+        border-radius: 50px;
+        opacity: 0.9;
+    }
+
+</style>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faudiax - (A)Playlists</title>
+    <link rel="stylesheet" href="AudioPlaylist.css">
+    <link rel="shortcut icon" type="x-icon" href="../images/FauChat.png">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+        <div class="FauPlaybody">
+
+          <div class="body2">
+            <div class="pfpbox">
+              <img src="../images/FauChat.png" alt="Faudiax pfp" class="pfpsquare">
+            </div>
+            
+            <h1 class="FauPLAYh1">Official Faudiax™</h1>
+      
+            <p class="fauplayp">
+              The Official Podcasts and tracks by the FaudyNEWS™.
+            </p>
+      
+              <button class="Playlist-auto" onclick="ExpandAudio()">▷</button>
+
+            <button class="followus">Follow Us</button>
+
+            <button class="followus2">&#x2665;</button>
+      
+
+            <div class="line4"></div>
+      
+            <div class="search-container2">
+              <input type="search" id="mySearch" onkeyup="myFunction()" placeholder="Search Podcasts by Official Faudiax™.." title="Type your search here">
+              <div class="lineverticle"></div> 
+              <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+              <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            </div>
+      
+            <div class="di2">
+              <ul id="myMenu">
+      
+                <table id="myTable">
+                  <tr>
+                    <td onclick="AudioPlay()">▷ FaudyNEWS Intro</td>
+                    <td>sfx</td>
+                    <td>00:15</td>
+                  </tr>
+                </table>
+              </ul>
+            </div>
+      
+            <script src="audioplay.js"></script>
+      
+            <div class="line4"></div>
+            
+            <p class="fauplayp-black">
+              Fodify's first playlist
+            </p>
+      
+          </div>
+        </div>
+    
+          <a href="../Home.html">
+            <p class="GoBack"> < </p>
+          </a>
+    
+        <!------ The profile nav bar ------->
+    
+          <div id="Profile-Nav" class="Search-Nav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeProfile()">&times;</a>
+    
+            <script>
+              function openProfile() {
+                document.getElementById("Profile-Nav").style.width = "100%";
+              }
+          
+              function closeProfile() {
+                document.getElementById("Profile-Nav").style.width = "0";
+              }
+            </script>
+    
+          </div>
+    
+  
+
+    <script>
+        function myFunction() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("mySearch");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }       
+          }
+        }
+    </script>
+
+    <div id="AudioPlayer" class="audiobox">
+        <div class="Audiobox-content">
+
+          <div class="Audio-thumb">
+            <img src="../images/FauChat.png" alt="" width="90%" class="A-imgTHumb" onclick="ExpandAudio()">
+          </div>
+
+          <button class="bruh" onclick="">#Faudiax</button>
+
+          <div class="buttons">
+            <div class="playpause-track" onclick="playpauseTrack()">
+              <i class="fa fa-play-circle fa-5x"></i>
+            </div>
+          </div>
+          
+          <p class="AudioName">FaudyNEWS intro</p>
+
+          <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration">00:00</div>
+          </div>
+
+          <span class="closebtn" onclick="closeAudio()" title="Close Overlay">×</span>
+
+        </div>
+    </div>
+
+    <script>
+        function AudioPlay() {
+          document.getElementById("AudioPlayer").style.display = "block";
+        }
+  
+        function closeAudio() {
+          document.getElementById("AudioPlayer").style.display = "none";
+        }
+    </script>
+
+    <script src="../script.js"></script>
+    <script src="Audio.js"></script>
+    <script src="../Search Results/SearchFiles.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+
+<style> 
+
+  body {
+    background: orangered;
+  }
+
+</style>
+
+</html>
